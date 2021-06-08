@@ -1,0 +1,116 @@
+/* calculator-body */
+/* TODO GRID layout */
+
+
+
+body{
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+    user-select: none;
+    background-color: aliceblue;
+}
+
+
+
+/* temp */
+#container {
+    height: 75vh;
+    width: 50vw;
+    background-color: #191b1d;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* title */
+#heading h1 {
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+#heading {
+    background-color: #4a4c4e;
+    /*background-color: #1e2022;*/
+    margin: 2%;
+        
+}
+
+/* display box */
+#display-container {
+    background-color: #343638;
+    height: 40%;
+    
+    margin: 0 2% 2% 2%;
+    border-radius: 5px;
+    
+
+}
+#display {
+    text-align: end;
+    height: 50%;
+    font-size: 2rem;
+    padding: 5px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* calculator keys */
+#keys {
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    margin: 2%;
+    display: flex;
+    flex-flow: column;
+
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    height: 25%;
+    
+}
+
+
+.key {
+    cursor: pointer;
+    border: 1px solid #1b1c1e;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2022;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.key:hover {
+    background-color: rgba(30,32,34, 0%);
+}
+
+
+.zero {
+    width: calc(200% + 6px);   
+}
+
+.operator {
+    background-color: #162d45;
+    transition: transform .1s ease-in;
+    
+}
+
+.operator:hover {
+    background-color: rgba(22, 45, 69, 70%);
+    transform: scale(1.04)
+}
